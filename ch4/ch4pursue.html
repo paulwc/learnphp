@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            .hdprice { font-weight: bold;color:red;}
+        </style>
+    </head>
+    <body>
+        <h1>Hard Drive purchase form</h1>
+        <form action="process_hd.php" method="post">
+            <p>A 2TB hard drive costs <span class="hdprice">$119.99</span> right now</p>
+            <input type="hidden" name="cost" value="119.99" />
+            <p>How many would you like to buy at this price?
+                <input type="text" size="2" name="numhd" />
+            </p>
+            <p>Do you have a discount?
+                <input type="text" size="2" name="discount" />% off
+            </p>
+            <input type="submit" value="Buy some hard drives" />
+        </form>
+    </body>
+</html>
