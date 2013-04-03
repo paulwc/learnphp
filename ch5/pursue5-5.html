@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pursue 5.5 Form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            form {
+                display: block;
+                margin: 10px 20px;
+                min-width: 200px;
+                max-width: 250px;
+            }
+            form p {
+                float: left;
+                display: block;
+                vertical-align: top;
+            }
+            form input {
+                width: 100%;
+                float: left;
+                vertical-align: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Pursue 5.5 -->
+        <div>
+            <p>Encrypt your username and some text</p>
+            <form action="pursue5-5.php" method="post">
+                <input type="text" name="username" size="20" placeholder="Enter a username">
+                <input type="password" name="salt" size="20" placeholder="Enter a salt">
+                <textarea name="plaintext" rows="9" cols="30" placeholder="Enter text to be encrypted"></textarea>
+                <input type="submit" name="submit" value="Encrypt" />
+           </form>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,33 @@
+Review:
+Strings are created like any other php variable surrounded by either double
+or single quotes. 
+$a_string = 'Hello world';
+
+Single quotation marks do not evaluate php variables
+contained within them, double quotes do.
+
+The concatenation operator is the . operator
+The concatenation assignment operator is .=
+
+A newline in a string printed to the browser only
+affects the html source of the page and does not affect the 
+visual display of the page. The nl2br library function 
+will convert a newline to a break tag and create the vertical space
+you expect to see with a newline.
+
+Problems such as malicious XSS attacks and user created
+formatting and css on your page. To prevent this,
+php library functions such as htmlentities,
+htmlspecialchars and strip_tags exist
+
+The library function urlencode makes data safe to pass
+to a URL
+
+To escape problematic chars within a string, you can 
+use flavours of str_replace, or htmlspecialchars and
+htmlentities. You can also use regular expressions.
+
+Chars in a string are indexed beginning at 0.
+
+The trim function removes whitespace at the beginning
+and end of a string.
