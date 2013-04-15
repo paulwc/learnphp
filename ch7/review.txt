@@ -1,0 +1,13 @@
+Review
+1) An indexed array has numbers as keys, and an associative array has strings as keys
+2) Use quotation marks for an array's key only if you are using an associative array. Quotes shouldn't be used for keys if your keys are numbers,
+variables, or constants
+3) Print a specific array element by using the array's name and the index, like $arrayname['index']. 
+To print the whole array, you can use print_r() or var_dump() and the name of the array
+4) If you forget the square brackets when assigning a value to an array item, it replaces the entire array and leaves you with a scalar variable
+5) The 'count()' or 'sizeof()' function returns the number of elements in an array
+6) When printing an element from an array inside a 'print' function, you surround the array in curly braces to prevent problems with single quotes
+or double quotes in the array key value. Curly braces are also used to print array values when the keys are strings.
+7) The asort() function sorts an array values and maintains the index/key information, while sort simply sorts the values regardless of keys. The only difference
+between sort() and rsort() is that rsort() sorts an array in reverse.
+8) The explode() function syntax is explode(delimiter, string, [optional limit]). 
