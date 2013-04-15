@@ -1,0 +1,15 @@
+Review
+1) Password inputs don't reveal their content, so the user enters them twice to ensure they know which password they entered
+2) Structure of if: if (condition) {statement(s)} 
+   Structure of if-else:  if (condition) {statement(s)} else if (condition) {statement(s)}
+   Structure of if-elseif-else:  if (condition) {statement(s)} else if (condition) {statement(s)} else {statement(s)}
+3) the isset function returns TRUE if a variable has any value at all, while the empty() function determines if a variable has no value, 0, or a value of FALSE.
+4) The assignment operator is the = operator, and assigns a value to a variable. The equality operator is the == operator, and checks for equal-ness
+5) The code if ($var = 'donut') will always be true, as it uses an assignment operator instead of an equality operator
+6) && means logical AND, and requires two statements to always be true
+   || means logical OR, and requires only one of the two statements to be true
+    ! means negation and will reverse the logical truthfulness of the statement it preceeds
+7) A switch statement structure is: 
+       switch ($var) { case value1: statement(s); break; value2: statement(s); break; default: statement(s); break; }
+8) A for loop syntax is: for( initial expression; conditional ; closing expression; ) { statement(s); }
+
