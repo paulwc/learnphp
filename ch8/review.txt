@@ -1,0 +1,18 @@
+1) include() will not stop PHP's execution if there is an error, it will only generate a warning. 
+   Require() will stop the execution of PHP and display a fatal error if there is a problem.
+2) The extension of the including file is the only one that matters, thus you can place php code into an included .html file and
+   it will execute as if it were actually a .php file.
+3) An absolute file path is a complete and specific address, often beginning with the root/base level of computer storage.
+   A relative file path indicates where the desired file exists in relation to the current file.
+4) To define a constant, you use the define() function. Constant names are case-sensitive. You can check if a constant has
+   been defined using the defined() function which returns true if the constant you name has already been defined.
+5) An epoch is defined as midnight on January 1st, 1970. A timestamp is the amount of seconds that have passed since the epoch.
+6) $_SERVER['REQUEST_METHOD'] will contain the type of request, POST or GET, used to access the current page. This can be used
+   to indicate whether or not a form has been submitted to a page (via POST) or loading the page as usual (normally via GET).
+7) To have a form element 'remember' previous values, you need to use PHP to insert the values the user has already entered
+   into the markup code of the elements themselves. You would usually check the existence of the form variable and then
+   escape it to prevent warnings and malicious markup appearing in your code.
+8) To see an error that occurs within a form element, you have to check the html source code of the page, as it won't appear in user visible markup.
+9) The error about 'headers already sent' means that PHP has already sent data, a blank space, or some kind of output and you the programmer
+   are attempting to use functions that manipulate or change the headers, which is not possible once the client has received data already. This
+   can be prevented by using output buffering to buffer all data that would be sent to the user until you programmatically make a call to send it. 
