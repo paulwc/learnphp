@@ -13,7 +13,6 @@
                         <?php
                             // print current date and time
                             date_default_timezone_set('America/New_York');
-
                             print date('g:i a l F j');
                         ?>
                         </p>
@@ -28,3 +27,5 @@
         </div> <!-- footer -->
     </body>
 </html>
+
+<?php ob_end_flush(); ?>

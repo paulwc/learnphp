@@ -1,0 +1,13 @@
+1) A cookie is stored in the web browser, so the data is on the user's computer.
+   A session stores data on the server.
+   Generally a session is more secure than a cookie
+2) Cookie related debugging includes printing out cookie variables in your PHP script, and installing a cookie-related extension for the 
+   web browser you are using.
+3) The path and domain arguments restrict a cookie to be accessible to certain levels of a website. Cookies are already limited by domain,
+   but setting a path restriction means a cookie will only be available under a certain folder on the website. The domain argument can limit a 
+   cookie to other subdomains, for example.
+4) To delete a cookie, you call the same setcookie() function as you use to create a cookie, but you leave the value blank or FALSE. You must also
+   use the same path/domain restrictions and other parameters as you did when you created the cookie.
+5) To access or set session data, every page must call session_start()  
+6) Cookies are used with sessions so every PHP script on a site can associate the same session data with a particular user.
+   Session id must be tracked and cookies are used for this. Subsequent PHP pages use this cookie to retrieve the session ID and access the session information.
