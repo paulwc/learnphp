@@ -1,0 +1,14 @@
+1) The basic syntax of a user defined function is "function userFunctionName(parameter1, parameter2) { statements }"
+2) Your own functions follow the same naming rules as PHP variables, except the do not include a $ at the beginning.
+   Functions cannot have spaces in their names, and their names should be meaningful.
+3) Function arguments must follow the naming restrictions as any other PHP variable.
+4) To provide a default value to a functions expression, you define it in the function definition as assigned
+   to a particular value. Ex) function myCustomFunction($param1, $param2='hi') { statement(s) } 
+5) If the backslash didn't preceed the $ in this expression, the variable's value would be printed out twice.
+   The backslash exists to escape the $ character so that it will actually print the $ character.
+6) Variable scope refers to the realm in which a variable exists (in the code).
+   A function argument has limited variable scope, and only exists in the realm of the function it is defined in.
+   Each function has its own separate, local scope.
+7) Since an included file is treated as if it were actually part of the original file's code, a variable defined
+   in an included file has the same scope as any other variable defined in the file that included it (unless the variable
+   is defined inside a function in the included file, then the variable is limited to that function as expected.
