@@ -1,0 +1,20 @@
+1)  PHP version 5.3.13
+2) To make a file or directory writeable to your server, the file/directory must have the correct user permissions
+   to permit writing and be accessible to the web server. The user account that executes php and apache (sometimes www-data, apache, etc)
+   must either be the owner of the file, in a group that owns the file or be given write access under the 'other' group.
+3) The web root directory is the base directory on a server that is accessible via HTTP. This directory is the base access point
+   for HTTP requests and allows access to all subfolders/files within it. Files placed in directories above the web root are not
+   accessible via regular HTTP requests. The web root directory for my computer is inside my local installation of WAMP server, which
+   I installed to a secondary hard drive, eg) 'D:\wamp\www\'
+4) Two ways to write data to a file are with the function file_put_contents($file, $data) or if you are using an older version of PHP, 
+   then you can use a file pointer to open the file (fopen()), write data to it (fwrite()), and then close the file (fclose()).
+5) To append new data to existing files, you can use the FILE_APPEND optional argument with the file_put_contents() function, or you can
+   open the file using the fopen() function with the 'a' or 'a+' mode selected.
+6) To ensure new data is written on it's own line, you take care to use the appropriate line break at the end of all data you write. This
+   is normally '\n' or '\r\n', but you can use the special PHP constant PHP_EOL to automatically use the correct characters.
+7) For a form to accept file uploads, it must have the enctype="multipart/form-data" argument added to the form tag to let browsers know
+   it contains different types of form data, must use the method='post' argument, and must have an <input type='file' ...> tag.
+8) A PHP script uses the $_FILES[] array to access uploaded files. The move_uploaded_file() function is used to move the uploaded file
+   from its temporary place on the server to a destination the user decides.
+9) The file() and file_get_contents() functions read an entire file into memory. The fgetcsv() function reads a user defined amount of data
+   from a file broken up by a separator as an array.
