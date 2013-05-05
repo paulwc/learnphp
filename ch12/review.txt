@@ -1,0 +1,10 @@
+1) libmysql - mysqlnd 5.0.8-dev. To connect to MySQL on my localmachine, I use the hostname 'localhost', and username 'learnphpuser'. My password
+   is supersecret
+2) A PHP connects to a MySQL server using the mysql_connect() function. To disconnect, it uses the mysql_close() function.
+3) The error supression operator is the @ symbol. It prevents any generated errors or warnings from being immediately displayed.
+4) mysql_error() is used to get information about a MySQL problem.
+5) Debugging techniques: print out the query to see if it is correct, use mysql_error, run the same query in another interface.
+6) To select which database you would like to use, use the mysql_select_db() function.
+7) To create a table, add new records, retrieve records, modify records, and remove records, you use the mysql_query command and
+   simply change the SQL calls to accomplish the desired operation.
+8) String functions should be run through mysql_real_escape_string
